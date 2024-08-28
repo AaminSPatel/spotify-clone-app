@@ -1,0 +1,144 @@
+.header{
+    height: auto;
+    background: rgb(0, 4, 4);
+    background: linear-gradient(50deg, rgb(84, 148, 121) 26%, rgb(65, 60, 101) 94%); 
+    padding: 5px 2%;
+    width: 96%;
+    min-width: 500px;
+    margin: 0;
+    --text-color:#fff;
+}
+.header a{
+    text-decoration: none;
+    
+}
+.head1{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.head1ul1,.head1ul2{
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    flex-direction: row;
+    gap: 10px;
+}
+.head1ul1 li{
+    background: #0202025c;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.head1ul1 li:hover{
+    background: #c8c8c8;
+    color: #000;
+}
+
+.head1ul2 li{
+    height: 30px;
+    width: auto;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 7px;
+    cursor: pointer;
+    line-height: 11px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head1ul2 li:hover{
+    background: #ffffff;
+    
+}
+.exppre{
+    background: #f8f8f8 !important;
+}
+.exppre:hover{
+    background: #181818 !important;
+}
+.exppre a{
+    color: #000 !important;
+}
+.exppre:hover a{
+    color: #fffcfc !important;
+}
+.head1ul2 li:hover a,.head1ul2 li:hover{
+    color: #000;
+}
+.head1ul2 a{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head1ul2  .iconinstal{
+    font-size: 17px;
+    padding-right:5px;
+}
+
+
+.head2{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+.head2 ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+
+}
+.head2 ul li{
+    height: 25px;
+    width: auto;
+    padding: 2px 10px;
+    background: #a9a5a567;
+    border-radius: 40px;
+}
+.head2 ul li:hover{
+    background: #252525;
+}
+.head2 ul li a{
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head3{
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.head3 ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin:0;
+    gap: 2px;
+}
+.head3 ul li{
+    cursor: pointer;
+    padding: 0;
+}

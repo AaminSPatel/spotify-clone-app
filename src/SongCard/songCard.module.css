@@ -1,0 +1,114 @@
+.container{
+    height: auto;
+    width: auto;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(21, 21, 21);
+
+}
+.card{
+   
+    background: #343636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card1{
+    height: 75%;
+    width: 100%; 
+    overflow: hidden;
+}
+.card1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.card2 {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card2 .card21 h2{
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+}
+.card2 .card21 h3{
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:600px) {
+    .card{
+        height: 50vh;
+        min-width: 250px;
+    }
+    .card1{
+        height: 100%;
+    }
+    .card2{
+        height: 70px;
+    }
+    .card2 h2{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .card2 h3{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+}
+@media (min-width:600px) and (max-width:900px) {
+    .card{
+        height: 50vh;
+        min-width: 300px;
+    }
+    .card1{
+        height: 100%;
+    }
+    .card2{
+        height: 70px;
+    }
+    .card2 h2{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .card2 h3{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+}@media screen and (min-width:800px) {
+    .card{
+        height: 60vh;
+        min-width: 350px;
+    }
+    .card1{
+        height: 100%;
+    }
+    .card2{
+        height: 90px;
+    }
+    .card2 h2{
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .card2 h3{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+}

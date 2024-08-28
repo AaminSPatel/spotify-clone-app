@@ -1,0 +1,576 @@
+.player {
+    height: auto;
+    background: var(--them-clr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    left: 50px;
+    top: 75.3vh;
+    gap: 0;
+  }
+  * {
+    --them-clr: #1c1b1b;
+  }
+  
+  .pl1,
+  .pl2 {
+    display: inline-block;
+    width: 100%;
+  }
+  .play1 {
+    width: 100%;
+    min-width: 180px;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row;
+    margin: 0;
+  }
+  .play1 img {
+    height: 45px;
+    border-radius: 5px;
+    margin: 5px 0;
+    aspect-ratio: 1;
+  }
+  .play1 div {
+    max-width: 70%;
+    min-width: 100px;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .play1 p {
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .hearticon {
+    height: 50px;
+    font-size: 25px;
+    color: #2add02;
+    filter: drop-shadow(0 0 5px rgb(5, 92, 38));
+    width: 20px;
+    cursor: pointer;
+  }
+  .play1 h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .play1 h2 small {
+    margin: 0;
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: 500;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(220, 219, 219);
+  }
+  
+  .play2 {
+    min-width: 278px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .play2 ul li:nth-child(3) {
+    font-size: 27px;
+  }
+  .play2 .play21 {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .play2 .play21 ul {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .play2 .play22 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .play2 .progress {
+    width: 100%;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    height: 15px;
+  }
+  
+  .progress .progres1 {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 190px;
+    width: 80%;
+    border-radius: 5px;
+  }
+  .progress .progres1 input {
+    height: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    min-width: 190px;
+    accent-color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+  .progress .progres1 input::-ms-thumb {
+    border-radius: 5px;
+    height: 20px;
+    width: 20px;
+  }
+  .progress .progres1 input::-webkit-slider-thumb {
+    height: 30px;
+    width: 40px;
+  }
+  .progress .progres1 input:hover {
+    accent-color: rgb(43, 213, 5);
+    -ms-progress-appearance: red;
+  }
+  
+  .progress .progres1 div {
+    height: 15px;
+    min-width: 190px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    padding: 0 3px;
+  }
+  .progress p {
+    padding: 0 !important;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 15px !important;
+    font-size: 14px;
+    word-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+  }
+  .play3 {
+    height: 100%;
+    min-width: 150px;
+    display: flex;
+  }
+  .play2 ul li,
+  .play3 ul li {
+    cursor: pointer;
+  }
+  .play2 ul,
+  .play3 ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .play2 ul {
+    gap: 15px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .player {
+      height: auto;
+      width: 100%;
+      top: 78.8%;
+      position: fixed;
+    }
+    .pl1,
+    .pl2 {
+      display: inline-block;
+      height: 40%;
+      width: 100%;
+    }
+    .pl2 {
+      height: 100%;
+      padding-bottom: 20px;
+    }
+    .play1,
+    .play2,
+    .play3 {
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+    .play1 div {
+      width: auto;
+      display: flex;
+      padding: 0 10px;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 700px) and (max-width: 900px) {
+    .player {
+      width: 100%;
+      gap: 0;
+      padding: 0;
+      top: 77.5%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .pl1,
+    .pl2 {
+      display: inline-block;
+      height: 80%;
+      width: 80%;
+    }
+    .pl2 {
+      height: 100%;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+    .play1 {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: row;
+      height: 50px;
+    }
+    .play1 div {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      width: 65%;
+      flex-direction: column;
+    }
+    .play1 p {
+      height: auto;
+      padding: 0 10px;
+    }
+    .play2 {
+      width: 100%;
+    }
+    .play3 ul {
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .player {
+      width: 100%;
+      min-width: 500px;
+      display: flex;
+      padding: 10px 0;
+      top: 80%;
+      height: 17vh;
+      flex-direction: column;
+    }
+    .pl1 {
+      display: inline-block;
+      height: 100%;
+      width: 80%;
+      padding-left: 15%;
+    }
+    .pl2 {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      padding-bottom: 25px;
+    }
+  
+    .play1,
+    .play2 {
+      width: 100%;
+    }
+  
+    .play1 {
+      justify-content: start;
+      align-items: center;
+    }
+    .play1 img {
+      transform: scale(1.1);
+    }
+    .play1 div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 60%;
+    }
+  }
+  
+  .volumebar {
+    accent-color: rgb(255, 255, 255);
+    transform: rotateZ(-90deg) translateX(10px) translateY(-0px);
+    height: 0;
+    width: 0;
+    display:none ;
+  }
+  .volbtn:hover .volicon {
+    opacity: 0;
+  }
+  .volbtn input[type="range"] {
+    width: 100px;
+    height: 20px;
+    border-radius: 13px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    overflow: hidden;
+  }
+  
+  .volbtn input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+    --volumebar-clr:rgb(58, 118, 182);
+    background-image: linear-gradient(to left,rgba(0, 204, 255, 0.183),rgb(58, 118, 182));
+    border: #000000 2px solid;
+    box-shadow: -80px 0px 0px 0 var(--volumebar-clr), -75px 0px 1px 0 var(--volumebar-clr),
+      -70px 0px 1px 0 var(--volumebar-clr), -65px 0px 1px  var(--volumebar-clr), -60px 0px 1px 0 var(--volumebar-clr),
+      -55px 0px 1px 0 var(--volumebar-clr), -50px 0px 1px  var(--volumebar-clr), -45px 0px 1px 0 var(--volumebar-clr),
+      -40px 0px 1px 0 var(--volumebar-clr), -35px 0px 1px  var(--volumebar-clr), -30px 0px 1px 0 var(--volumebar-clr),
+      -25px 0px 1px 0 var(--volumebar-clr), -20px 0px 1px 0 var(--volumebar-clr),
+      -15px 0px 1px 0 var(--volumebar-clr), -9px 0px 0px 0 var(--volumebar-clr);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .volbtn input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  .volbtn input::-moz-progress-bar {
+    height: 10px;
+    width: 20px;
+    background: #000;
+  }
+  .volbtn:hover .volumebar {
+    display: block;
+  }
+  
+  /*Full screen player */
+  .player1 {
+    height: 101vh;
+    width: 100%;
+    background: var(--them-clr);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    scroll-behavior: smooth;
+    gap: 0;
+    padding-right: 10px;
+    transform: translateX(-9px);
+  }
+  /*
+  body{
+    overflow-y: hidden;
+    overflow: hidden;
+  }
+    */
+  
+  .playpart1 {
+    height: 82.4vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .playpart1 .plcard1,
+  .playpart1 .plcard2,
+  .playpart1 .plcard3 {
+    height: auto;
+    width: 350px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .playpart1 .plcard1 {
+    width: 250px;
+    filter: brightness(0.6) opacity(0.8) contrast(0.9);
+    transform: perspective(500px) rotateY(0deg) translateX(-80px) scale(0.9);
+  }
+  .playpart1 .plcard2 {
+    width: 250px;
+    transform: scale(1.3);
+    z-index: 2;
+  }
+  
+  .playpart1 .plcard3 {
+    width: 250px;
+    filter: brightness(0.6) opacity(0.8) contrast(0.9);
+    transform: perspective(500px) rotateY(-0deg) translateX(80px) scale(0.9);
+  }
+  
+  .playpart22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0;
+  }
+  .play22 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  .play221 {
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+  }
+  .plicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 28px;
+    gap: 10px;
+    padding-left: 100px;
+    cursor: pointer;
+  }
+  .tlicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 17px;
+    gap: 10px;
+    width: 100px;
+    cursor: pointer;
+  }
+  .play222 {
+    width: 90%;
+    height: 20%;
+  }
+  .play222 .progress {
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 22px;
+    height: 7px;
+    border: none;
+    outline: none;
+    min-width: 190px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .play222 .progres1 {
+    cursor: pointer;
+    width: 75%;
+    height: 10px;
+  }
+  
+  .play222 .progress input {
+    accent-color: rgb(38, 255, 0);
+    cursor: pointer;
+  }
+  .play222 .progress input:hover {
+    accent-color: rgb(13, 255, 0);
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .playpart22 {
+      justify-content: start;
+    }
+    .play22 {
+      height: 15vh;
+      justify-content: start;
+    }
+    .play222 .progress {
+      justify-content: start;
+    }
+  }
+  @media (min-width: 600px) and (max-width: 800px) {
+    .playpart22 {
+      justify-content: center;
+    }
+    .play22 {
+      height: 15vh;
+      justify-content: center;
+    }
+    .play222 .progress {
+      justify-content: start;
+      height: 10px;
+      gap: 15px;
+    }
+    .plicon {
+      padding-left: 150px;
+    }
+    .tlicon {
+      padding-left: 50px;
+      width: 120px;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 1400px) {
+    .playpart22 {
+      justify-content: center;
+      height: 13vh;
+    }
+    .play22 {
+      justify-content: center;
+    }
+    .play222 .progress {
+      justify-content: center;
+      gap: 20px;
+    }
+    .plicon {
+      padding-left: 200px;
+    }
+    .tlicon {
+      padding-left: 100px;
+    }
+  }
+  
