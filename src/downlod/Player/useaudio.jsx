@@ -1,4 +1,5 @@
 //how to import js method for play audio in react
+import $ from "jquery";
 
 import { useMemo, useEffect, useState } from 'react';
 // import rain from 'assets/audio/rain.mp3'; --> hardcoded import I've tried

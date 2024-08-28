@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { MusicPlayerContext } from "../MusicPlayerContext";
+import $ from "jquery";
 
 const useMusicPlayer = () => {
   const [state, setState] = useContext(MusicPlayerContext);

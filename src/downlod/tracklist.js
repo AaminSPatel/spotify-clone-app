@@ -2,6 +2,8 @@ import React from "react";
 import useMusicPlayer from "../hooks/useMusicPlayer";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPlay, faPause} from "@fortawesome/free-solid-svg-icons";
+import $ from "jquery";
+
 function TrackList() {
   const { trackList, currentTrackName, playTrack, isPlaying } = useMusicPlayer();
   return (

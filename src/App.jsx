@@ -9,9 +9,9 @@ import data from "./Data/data.jsx";
 import { useState, useEffect } from "react";
   //import { createContext } from "react";
   //export const CountContext = createContext([{},() => {}]);
-
+import $ from "jquery";
   import { SongProvider } from "./CountContext.jsx";
-import { useContext } from "react";
+//import { useContext } from "react";
 function App() {
   const [songdata, setSongdata] = useState([]);
   const [likedSongdata, setLikedSongdata] = useState([]);

@@ -1,3 +1,4 @@
+import $ from "jquery";
 
 import style from './Dashboard.module.css'
 

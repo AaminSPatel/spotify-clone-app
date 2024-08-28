@@ -5,6 +5,7 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 import { HiCollection,HiOutlineCollection } from "react-icons/hi";
 import { IoSearchSharp } from "react-icons/io5";
 import { FaCirclePlus } from "react-icons/fa6";
+import $ from "jquery";
 
 import data from '../Data/data.jsx'
 

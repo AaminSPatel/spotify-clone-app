@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LostChameleon from './assets/LostChameleon.mp3';
 import Rock from './assets/TheHipsta.mp3';
 import Tobu from './assets/Tobu.mp3';
+import $ from "jquery";
 
 const MusicPlayerContext = React.createContext([{}, () => {}]);
 

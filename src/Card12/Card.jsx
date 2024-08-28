@@ -1,5 +1,6 @@
 import styles from './Card.module.css'
 import PropTypes from 'prop-types'
+import $ from "jquery";
 
 function card(props){
 

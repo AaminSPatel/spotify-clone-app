@@ -1,6 +1,7 @@
 import style from './header.module.css'
 import Card33 from '../Card12/Card.jsx'
 import data from "../Data/data.jsx";
+import $ from "jquery";
 
 import { GrInstallOption } from "react-icons/gr";
 import {FaAngleRight,FaAngleLeft,FaCircleUser ,FaBell} from 'react-icons/fa6'

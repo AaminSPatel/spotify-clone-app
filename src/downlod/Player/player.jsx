@@ -5,6 +5,7 @@ import { MdSkipNext, MdSkipPrevious } from "react-icons/md";
 import { AiOutlineFullscreen, AiOutlineFullscreenExit } from "react-icons/ai";
 import { IoMdPlayCircle } from "react-icons/io";
 import { IoPauseCircle } from "react-icons/io5";
+import $ from "jquery";
 
 import { useState, useEffect,useContext } from "react";
 //import Audio from "./audioplayer.jsx";

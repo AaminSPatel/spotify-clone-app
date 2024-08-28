@@ -2,6 +2,7 @@ import profileImg from './profile.png'
 import styles from './Card.module.css'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import $ from "jquery";
 
 function card(props){
     const[data,setData] = useState([])

@@ -4,6 +4,7 @@ import { IoPauseCircle } from "react-icons/io5";
 import { IoMdPlayCircle } from "react-icons/io";
 import { useEffect, useState,useContext} from "react";
 import data from "../Data/data.jsx";
+import $ from "jquery";
 
 function card(props) {
   const [likedSongs, setLikedSongs] = useState([]);

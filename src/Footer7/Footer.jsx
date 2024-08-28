@@ -1,5 +1,6 @@
 import './Footer1.css'
 import { FaFacebook, FaInstagram,FaTwitter} from "react-icons/fa6";
+import $ from "jquery";
 
 function footer(){
     return(
